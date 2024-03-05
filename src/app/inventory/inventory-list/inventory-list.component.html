@@ -1,0 +1,34 @@
+<app-delete-alert
+  *ngIf="deleteConfirmation"
+  (yesDel)="delete()"
+  (noDel)="cancel()"
+></app-delete-alert>
+
+<div class="row">
+  <div class="col-xs-12">
+    <div>
+      <h3>Inventory Items</h3>
+      <div class="inventory-grid">
+        <div class="inventory" *ngFor="let item of inventory; let i = index">
+          <div class="inventory-details">
+            <p><span>Item Name: </span> {{ item.name }}</p>
+            <p><span>Description: </span> {{ item.description }}</p>
+            <p><span>Quantity:</span> {{ item.quantity }}pcs</p>
+            <p><span>Price:</span> ${{ item.price }}</p>
+          </div>
+
+          <div class="inventory-btn">
+            <button class="btn btn-success" (click)="onEdit(i)">Edit</button>
+            <button
+              class="btn btn-danger"
+              *ngIf="isManager"
+              (click)="onDelete(i)"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

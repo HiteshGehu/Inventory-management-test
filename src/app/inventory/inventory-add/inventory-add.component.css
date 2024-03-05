@@ -1,0 +1,38 @@
+.row {
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+  background-color: #a5d9d6;
+}
+.form-div {
+  margin-top: 5rem;
+}
+.btn-add-form {
+  display: flex;
+  gap: 2rem;
+}
+.success-msg {
+  margin-top: 2rem;
+
+  font-size: 4rem;
+  font-weight: bold;
+
+  color: #2196f3;
+}
+.btn {
+  font-weight: bold;
+}
+
+@media (max-width: 1077px) {
+  .form-div {
+    width: 90%;
+    margin: 5rem 3rem;
+  }
+}
+@media (max-width: 559px) {
+  .form-div {
+    width: 85%;
+    margin: 5rem 3rem;
+  }
+}

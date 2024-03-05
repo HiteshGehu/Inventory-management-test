@@ -1,0 +1,35 @@
+.row {
+  height: 100vh;
+  padding: 4rem;
+
+  background-image: linear-gradient(to right, #bde4f4, #66c1e5);
+  color: #333;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 2rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.open-line {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  margin-bottom: 2rem;
+}
+@media (max-width: 576px) {
+  .top-bar {
+    display: block;
+  }
+}
